@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('/static/img/background.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+width: auto;
+}
+
+    /* Custom styles */
+    #chat-box {
+      height: 50vh;
+      overflow-y: scroll;
+    }
+    .chat-bubble {
+      padding: 20px;
+      margin: 20px;
+      border-radius: 20px;
+      max-width: 800%;
+    }
+    .chat-bubble.me {
+      align-self: flex-end;
+      background-color: #dcf8c6;
+    }
+    .chat-bubble.chatgpt {
+      align-self: flex-start;
+      background-color: #e5e5ea;
+    }
+    .chat-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
